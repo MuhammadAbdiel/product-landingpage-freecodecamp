@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ddd;
+    color: black;
+}
+
+/* *Header */
+
+header {
+    position: fixed;
+    display: flex;
+    background-color: #ccc;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+.logo {
+    width: 60%;
+}
+
+.logo img {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#nav-bar ul {
+    width: 45vw;
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-bar ul li {
+    padding: 5px 20px 5px 20px;
+    margin: 0 5px 0 5px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+a:hover {
+    box-shadow: 0px 0px 2px 2px #444;
+}
+
+/* *Email */
+
+.email {
+    padding-top: 90px;
+}
+
+.title {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+label,
+input {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+input[type="submit"] {
+    background-color: gold;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0px 0px 2px 2px #666;
+}
+
+/* *Container */
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px #444;
+}
+
+.container div {
+    padding: 30px 0;
+}
+
+#how-it-works {
+    padding-left: 20%;
+}
+
+.container #pricing {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.container #pricing .heading,
+.container #pricing .price {
+    width: 80%;
+    margin: -45px auto;
+}
+
+.container #pricing button {
+    width: 50%;
+    margin: -45px auto;
+    padding: 5px;
+    background-color: gold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container #pricing button:hover {
+    box-shadow: 0px 0px 2px 2px #444;
+}
+
+.container #pricing div {
+    width: 33.3%;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.tenor {
+    box-shadow: 1px 1px 2px 1px #444;
+    border-radius: 5px;
+}
+
+.bass {
+    box-shadow: 1px 1px 2px 1px #444;
+    border-radius: 5px;
+}
+
+.valve {
+    box-shadow: 1px 1px 2px 1px #444;
+    border-radius: 5px;
+}
+
+/* *Footer */
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #666;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px #444;
+}
+
+footer h4 {
+    text-align: right;
+    padding: 20px;
+    color: #eee;
+}
+
+/* *Responsive */
+
+@media screen and (max-width: 1100px) {
+    header {
+        height: 120px;
+    }
+
+    .logo img {
+        padding-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #nav-bar ul {
+        display: block;
+    }
+
+    .email {
+        padding-top: 150px;
+    }
+
+    label,
+    input {
+        width: 80%;
+    }
+
+    #how-it-works {
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .container #pricing {
+        display: block;
+    }
+
+    .container #pricing div {
+        width: 90%;
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: block;
+        height: 180px;
+    }
+
+    .logo img {
+        padding-top: 0;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .email {
+        padding-top: 200px;
+    }
+
+    label,
+    input {
+        width: 100%;
+    }
+
+    #how-it-works {
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
